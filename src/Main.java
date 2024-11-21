@@ -7,7 +7,7 @@ public class Main {
         Weather day5 = new Weather("friday", 20, "clear");
         Weather day6 = new Weather("saturday", -2, "snow");
         Weather day7 = new Weather("sunday", 40, "hail");
-        day7.printTomorrowInfo();
+        day7.switchWeekday(1);
 
 
     }

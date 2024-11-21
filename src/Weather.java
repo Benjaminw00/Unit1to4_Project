@@ -61,18 +61,21 @@ public class Weather {
         }
     }
 
-    public void printTomorrowInfo() {
+    public void switchWeekday(int daySkipped) {
         weekday = (weekday.substring(0, 1)).toUpperCase(Locale.ROOT) + weekday.substring(1);
-        String origWeekday = weekday;
-        int i = 0;
+        int currentDay=0;
         String[] week = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
-        while (weekday.equals(origWeekday)){
-            if (weekday.equals(week[i])) {
-                weekday = week[i + 1];
+
+        for (int i = 0; i<=6;i++){ //gets the current index of the currentDay of the object.
+            if (weekday.equals(week[i])){
+                currentDay = i;
             }
-            i++;
         }
 
-        System.out.println(weekday + "'s temperature is sitting at " + temp + " degrees.");
+
+        //add segment where it adds daySkipped amount of days here down below
+
+
+        System.out.println(currentDay);
     }
 }
