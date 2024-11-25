@@ -53,20 +53,6 @@ public class Weather {
     statements to make the sentences actually make sense. However, it assumes that the object is created
     with the right keywords like "rain", "snow", "hail".
      */
-    public void printInfo(){
-        weekday = (weekday.substring(0, 1)).toUpperCase(Locale.ROOT) + weekday.substring(1);
-        System.out.println(weekday + "'s temperature is sitting at " + temp +" degrees.");
-        if (weatherCondition.equals("rain") || weatherCondition.equals("snow")){
-            System.out.println("The weather is looking " + weatherCondition +"y.");
-        }
-        else if (weatherCondition.equals("hail")){
-            System.out.println("It will hail soon.");
-        }
-        else{
-            System.out.println("The weather will be " + weatherCondition + ".");
-        }
-    }
-
     public String toString(){
         weekday = (weekday.substring(0, 1)).toUpperCase(Locale.ROOT) + weekday.substring(1);
         System.out.println(weekday + "'s temperature is sitting at " + temp +" degrees.");
