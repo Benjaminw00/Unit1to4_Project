@@ -47,7 +47,7 @@ public class Weather {
     }
 
     /*
-    Prints an object's attributes. For example exampleObject.printInfo() would print exampleObject's
+    Prints an object's attributes. For example System.out.print(exampleObject) would print exampleObject's
     weekday, temp, and weatherCondition. It also converts any lower case starting letters in weekday to
     upper case (monday to Monday). Prints out the attributes with sentences and I included different if
     statements to make the sentences actually make sense. However, it assumes that the object is created
