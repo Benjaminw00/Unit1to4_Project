@@ -43,7 +43,7 @@ public class Weather {
         if (weatherCondition.equals("rain") || weatherCondition.equals("hail")){
             return "Bring an umbrella today.";
         }
-        return "No need for an umbrella today";
+        return "No need for an umbrella today.";
     }
 
     /*

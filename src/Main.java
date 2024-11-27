@@ -8,9 +8,13 @@ public class Main {
         Weather day4 = new Weather("thursday", 70, "cloudy");
         Weather day5 = new Weather("friday", 20, "clear");
         Weather day6 = new Weather("saturday", -2, "snow");
-        Weather day7 = new Weather("sunday", 40, "hail");
         Weather day8 = new Weather("sunday", "clear");
         System.out.println(day8);
+        System.out.println(day1);
+        day8.switchWeekday(5);
+        System.out.println(day8);
+        System.out.println(day8.jacket());
+        System.out.println(day8.umbrella());
 
 
 
